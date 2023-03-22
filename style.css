@@ -1,0 +1,282 @@
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+}
+
+#humaya {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25rem;
+    align-items: center;
+    gap: 2rem;
+
+    background: url("IMAGENES/Central/imagenCentral.png") fixed;
+    background-size: 130%;
+    background-position: 100% 10%;
+
+    color: white;
+}
+
+.container_humaya {
+    text-align: center;
+    grid-column: 2;
+    margin: 1rem;
+    /* grid-column: 1 / -1; 
+    justify-self: end;  */
+}
+
+/* Seccion calidad */
+
+#calidad {
+    background-color: rgb(74, 73, 73);
+
+    text-align: center;
+    color: white;
+}
+
+#calidad h4 {
+    padding-top: 1rem;
+}
+
+.container_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.icons {
+    width: 128px;
+}
+
+.icons img {
+    padding-bottom: 1rem;
+}
+
+/* Seccion productos */
+
+#productos h2 {
+    padding: 1rem;
+    color: white;
+    background: rgb(74, 74, 74);
+    background: linear-gradient(
+        180deg,
+        rgba(74, 74, 74, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    text-align: center;
+}
+
+#productos {
+    background-color: black;
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    color: white;
+    background-color: black;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+/* .producto img:hover{
+    transform: scale(1.2);
+} */
+
+.pr-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pr-info h4 {
+    color: rgb(211, 170, 138);
+}
+
+.pr-info p {
+    font-size: 17px;
+}
+
+.pr-info button {
+    background-color: black;
+    border-color: rgb(211, 170, 138);
+    border: solid 2px;
+    color: rgb(211, 170, 138);
+    padding: 0.5rem 1rem;
+    transition: border-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.pr-info button:hover {
+    border-color: rgb(156, 126, 103);
+    color: rgb(156, 126, 103);
+}
+
+/* Sección clientes */
+#clientes {
+    background-color: rgb(74, 74, 74);
+}
+
+#clientes h2 {
+    padding: 1rem;
+    color: white;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(74, 74, 74, 1) 100%
+    );
+    text-align: center;
+}
+
+#clientes button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#clientes i {
+    color: white;
+}
+
+.carousel-container {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+}
+
+.carousel-slide {
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    width: calc(120px * 4);
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.carousel-slide img:last-child {
+    margin-right: 0;
+}
+
+.carousel-slide.move {
+    transform: translateX(calc(-100% / 3));
+}
+
+/* Sección quienes somos */
+#quienessomos {
+    background-color: black;
+}
+
+#quienessomos h2 {
+    padding: 1rem;
+    color: white;
+    background: rgb(74, 74, 74);
+    background: linear-gradient(
+        180deg,
+        rgba(74, 74, 74, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    text-align: center;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+.bio p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.bio img {
+    max-width: 100%;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: rgb(74, 74, 74);
+}
+
+#contacto h2 {
+    padding: 1rem;
+    color: white;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(74, 74, 74, 1) 100%
+    );
+    text-align: center;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    color: white;
+    background-color: rgba(74, 74, 74, 1);
+    gap: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 16px;
+    width: fit-content;
+    gap: 0.5rem;
+    color: rgb(211, 170, 138);
+}
+
+.contact input,
+textarea {
+    margin-bottom: 10px;
+}
+
+#newsletter {
+    margin-left: 0.6rem;
+}
+
+.contact img {
+    max-width: 100%;
+}
+
+.contact .submit {
+    margin: auto;
+}
+
+.contact button {
+    background-color: rgb(74, 74, 74);
+    border-color: rgb(211, 170, 138);
+    border: solid 2px;
+    color: rgb(211, 170, 138);
+    padding: 0.5rem 1rem;
+    margin: 0.6rem;
+    transition: border-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.contact button:hover {
+    border-color: rgb(156, 126, 103);
+    color: rgb(156, 126, 103);
+}
