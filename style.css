@@ -280,3 +280,44 @@ textarea {
     border-color: rgb(156, 126, 103);
     color: rgb(156, 126, 103);
 }
+
+/* Estilos del footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-logo {
+    justify-content: space-around;
+}
+
+footer h5 {
+    color: rgb(211, 170, 138);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li,
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 1.7rem;
+    margin: auto;
+}
